@@ -8,14 +8,14 @@ if not syn or not protectgui then
 end
 
 local SilentAimSettings = {
-    Enabled = false,
+    Enabled = true,
     
     ClassName = "GayHub v6.9 - Ruby, IQ, Anarsiie",
     ToggleKey = "RightAlt",
     
     TeamCheck = false,
     VisibleCheck = false, 
-    TargetPart = "HumanoidRootPart",
+    TargetPart = "Head",
     SilentAimMethod = "Raycast",
     
     FOVRadius = 95,
@@ -29,7 +29,7 @@ local SilentAimSettings = {
 
 -- variables
 getgenv().SilentAimSettings = Settings
-local MainFileName = "UniversalSilentAim"
+local MainFileName = "GayHub"
 local SelectedFile, FileToSave = "", ""
 
 local Camera = workspace.CurrentCamera
@@ -240,10 +240,10 @@ local function getClosestPlayer()
 end
 
 -- ui creating & handling
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
-Library:SetWatermark("github.com/Averiias")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/96yaGsIybuR/skillz/main/library.lua"))()
+Library:SetWatermark("github.com/96yaGsIybuR")
 
-local Window = Library:CreateWindow("Universal Silent Aim, by Averiias, xaxa, and Stefanuk12")
+local Window = Library:CreateWindow("GayHub v6.9, by Ruby, IQ, Anarsiie")
 local GeneralTab = Window:AddTab("General")
 local MainBOX = GeneralTab:AddLeftTabbox("Main") do
     local Main = MainBOX:AddTab("Main")
